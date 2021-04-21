@@ -3,4 +3,10 @@
 
 require File.expand_path('../config/application', __FILE__)
 
+desc "A console"
+task :console do 
+    Pry.start 
+end 
+
+
 Rails.application.load_tasks
